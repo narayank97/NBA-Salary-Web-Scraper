@@ -4,6 +4,9 @@ const axios = require('axios');
 
 const util = require('util');
 
+// this line just raises the max number of lines that can be displayed on terminal
+util.inspect.defaultOptions.maxArrayLength = null; 
+
 const url = 'https://hoopshype.com/salaries/players/';
 
 // this code gets html page from the url
