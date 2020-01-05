@@ -6,6 +6,6 @@
 
 3. Enter **npm install** in commnad line.
 
-4. Enter **node nbaSalaryScraper.js** in commnad line.
+4. Enter **node nbaSalaryScraper.js** in command line.
 
 5. Hopefully be amazed.
