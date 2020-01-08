@@ -29,10 +29,18 @@ let getData = html => {
     $('tbody tr :nth-child(2)').each((i,elem) => {
         // create an object, and place name in specific var
         info.push({
+            rank: "",
             playerName : $(elem).text().trim(),
             playerSalary: ""
         });
     });
+
+    //add salary rank
+    $('tbody tr').each((i,elem) => {
+        //console.log($(elem).find('td.rank').text().trim());
+        info[i].rank = $(elem).find('td.rank').text().trim();
+    });
+
     // go through a second time to get the actual salary
     // 3rd td tag shows the salary
     $('tbody tr :nth-child(3)').each((i,elem) => {
